@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KanBan Board</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/changeNameContainer.css">
+  <link rel="stylesheet" href="styles/addtodo.css">
+</head>
+<body>
+  
+  <div class="name-container js-name-container">
+    <div class="close-name js-close-rename">x</div>
+    <div class="name-inner-container">
+      <div class="old-name js-old-name">Old Name</div>
+      <input class="name-input js-new-name-input" type="text" placeholder="New Name">
+      <button class="submit-button js-rename-submit">Submit</button>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="add-todo-container ">
+      <div class="add-todo-icon js-add-todo-icon">+</div>
+      <input class="new-todo-input js-new-todo-input" type="text" placeholder="New Todo">
+    </div>
+    <div></div>
+    <div></div>
+
+    <div class="left-header">Todo</div>
+    <div class="middle-header">Doing</div>
+    <div class="right-header">Done</div>
+
+    <div id="left" class="js-left"></div>
+    <div id="middle" class="js-middle"></div>
+    <div id="right" class="js-right"></div>
+  </div>
+ 
+  <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
